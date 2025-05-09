@@ -6,7 +6,9 @@ import { STORAGES } from '$lib/constants/storage';
 export const load: LayoutServerLoad = async ({ cookies, url }) => {
   console.log("root load server")
   const token = cookies.get(STORAGES.ACCESS_TOKEN);
+  console.log(token);
   const path  = url.pathname;
+  console.log(path);
   const publicRoutes = ['/login','/signup'];
   
   if (!token && !publicRoutes.includes(path)) {
