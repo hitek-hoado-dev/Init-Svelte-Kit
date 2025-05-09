@@ -65,8 +65,8 @@
     }
   </script>
   
-  <div class="max-w-md mx-auto mt-8">
-    <div class="card w-[500px] shadow-lg bg-base-100">
+  <div class="mx-auto">
+    <div class="card w-[500px] shadow-lg bg-zinc-700">
       <div class="card-body">
         <h2 class="card-title text-center text-2xl font-bold mx-auto">
           {#if mode === 'login'}

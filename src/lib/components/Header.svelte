@@ -20,7 +20,7 @@
 
 <header class="p-3">
 	<div class="corner">
-		<a href="https://svelte.dev/docs/kit">
+		<a href={APP_ROUTES.HOME}>
 			<img src={logo} alt="SvelteKit" width="50" height="50" />
 		</a>
 	</div>

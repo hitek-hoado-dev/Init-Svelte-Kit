@@ -29,7 +29,7 @@
 </script>
 
 <div class="container mx-auto mt-8 flex-1 flex">
-  <div class="card w-full bg-base-100 shadow-lg h-fit">
+  <div class="card w-full bg-zinc-700 shadow-lg h-fit">
     <div class="card-body">
       <h2 class="card-title text-2xl mb-4">User List</h2>
 
@@ -83,9 +83,9 @@
             <table class="table w-full">
               <thead>
                 <tr>
-                  <th class="bg-neutral text-white">Label</th>
-                  <th class="bg-neutral text-white">Value</th>
-                  <th class="bg-neutral text-white">Actions</th>
+                  <th class="bg-zinc-600 text-white">Label</th>
+                  <th class="bg-zinc-600 text-white">Value</th>
+                  <th class="bg-zinc-600 text-white">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -96,8 +96,8 @@
                     <td>
                       <div class="flex gap-2">
                         <button class="btn btn-sm btn-primary" on:click={() => handleView((page - 1) * limit + index)}>View</button>
-                        <button class="btn btn-sm btn-secondary">Edit</button>
-                        <button class="btn btn-sm btn-error">Delete</button>
+                        <button class="btn btn-sm btn-secondary cursor-not-allowed" disabled>Edit</button>
+                        <button class="btn btn-sm btn-error cursor-not-allowed" disabled>Delete</button>
                       </div>
                     </td>
                   </tr>
