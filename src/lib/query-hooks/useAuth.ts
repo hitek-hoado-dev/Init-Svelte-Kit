@@ -11,7 +11,7 @@ export const useLogin = () => {
     return createMutation({
         mutationFn: authApi.login,
         onSuccess: (data: LoginResponse) => {
-            setCookie(STORAGES.ACCESS_TOKEN, data.token);
+            setCookie(STORAGES.ACCESS_TOKEN, data.token, { secure: true });
             setCookie(STORAGES.USER_INFO, data?.user)
             userStore.set(data?.user);
             console.log(data?.user);
