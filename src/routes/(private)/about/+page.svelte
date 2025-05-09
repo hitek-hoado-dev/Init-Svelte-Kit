@@ -7,11 +7,11 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-base-100 flex-1 p-20">
+<div class="text-zinc-900 flex-1 p-20">
 	<h1>About this app</h1>
 
 	<p>
-		This is a <a href="https://svelte.dev/docs/kit">SvelteKit</a> app. You can make your own by typing
+		This is a <a href={APP_ROUTES.HOME}>SvelteKit</a> app. You can make your own by typing
 		the following into your command line and following the prompts:
 	</p>
 

@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-	<h1 class="text-base-100">
+	<h1 class="text-zinc-900">
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
@@ -21,7 +21,7 @@
 
 	</h1>
 
-	<h2 class="text-base-100">
+	<h2 class="text-zinc-900">
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 

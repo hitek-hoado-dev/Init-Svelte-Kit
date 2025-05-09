@@ -10,7 +10,12 @@ export const load: LayoutServerLoad = async ({ cookies, url }) => {
   console.log(token);
   const path  = url.pathname;
   console.log(path);
-  const publicRoutes = [APP_ROUTES.LOGIN, APP_ROUTES.SIGNUP, APP_ROUTES.ABOUT];
+  const publicRoutes = [APP_ROUTES.LOGIN, APP_ROUTES.SIGNUP];
+  const staticRoutes = [APP_ROUTES.ABOUT];
+
+  if (staticRoutes.includes(path as APP_ROUTES)) {
+    return { token };
+  }
   
   if (!token && !publicRoutes.includes(path as APP_ROUTES)) {
     console.log('redirect to login')

@@ -6,6 +6,8 @@
 
 	export let data: { user: User };
 
+	let year = new Date().getFullYear();
+
 	// Set user store chỉ khi F5 store là null
 	$: if (get(userStore) === null && data.user) {
 		userStore.set(data.user);
@@ -20,7 +22,7 @@
 
 	<footer>
 		<p class="text-center text-black">
-			Default Footer
+			Copyright © {year}
 		</p>
 	</footer>
 </div>
